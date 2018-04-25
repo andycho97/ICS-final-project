@@ -35,8 +35,8 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
 
-  #require(readxl)
-  #ames_cities <- read_excel("ames_cities.xlsx")
+  require(readxl)
+  ames_cities <- read_excel("ames_cities.xlsx")
   
   df <- reactive(ames_cities)
   leg <- matrix(c("Purple", "Yellow", "Green", "North Korean Nuclear Program", "North Korean Defectors and Refugees", "International Human Rights"),3,2)
